@@ -1,0 +1,12 @@
+{
+  "theme": "moonstone",
+  "cssTheme": "Blue Topaz",
+  "baseFontSize": 14,
+  "textFontFamily": "Consolas",
+  "interfaceFontFamily": "Consolas",
+  "monospaceFontFamily": "Consolas",
+  "accentColor": "",
+  "translucency": true,
+  "nativeMenus": false,
+  "baseFontSizeAction": true
+}
