@@ -4,12 +4,6 @@
 apt-get install docker.io docker-compose
 ~~~
 
-安装ssh
-~~~
-apt install openssh-server
-~~~
-
-
 
 ~~~
 mkdir -p /etc/docker
