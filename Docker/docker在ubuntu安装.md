@@ -1,24 +1,4 @@
 
-修改root密码
-~~~
-sudo passwd root
-~~~
-
-获取root权限
-~~~
-su root
-~~~
-
-查看防火墙状态
-~~~~
-ufw status
-~~~~
-
-关闭防火墙
-~~~
-ufw disable
-~~~
-
 安装docker
 ~~~
 apt-get install docker.io docker-compose
