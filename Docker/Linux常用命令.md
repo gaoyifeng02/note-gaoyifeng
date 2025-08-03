@@ -7,6 +7,8 @@ docker pull nginx:1.12.2
 docker pull portainer/portainer-ce
 docker pull redis:7.2.6
 docker pull apache/rocketmq:5.2.0
+docker pull rabbitmq:management
+docker pull zookeeper:3.4.13
 ~~~
 
 
