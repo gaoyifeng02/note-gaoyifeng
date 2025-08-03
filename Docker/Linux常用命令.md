@@ -10,11 +10,3 @@ docker pull apache/rocketmq:5.2.0
 docker pull rabbitmq:management
 docker pull zookeeper:3.4.13
 ~~~
-
-
-
-查看本机ip
-~~~
-
-~~~
-
