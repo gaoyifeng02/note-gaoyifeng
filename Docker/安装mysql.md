@@ -1,9 +1,9 @@
-
+~~~
 sudo mkdir -p /docker/mysql8
-sudo chmod 777 /docker/mysql8  # 确保 Docker 有写入权限
-
+sudo chmod 777 /docker/mysql8
 sudo mkdir -p /docker/mysql5.7
 sudo chmod 777 /docker/mysql5.7
+~~~
 
 ~~~
 docker pull mysql:8.4.3
