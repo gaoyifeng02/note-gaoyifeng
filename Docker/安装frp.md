@@ -1,4 +1,6 @@
 
+https://blog.csdn.net/y_wu794/article/details/150637146
+
 
 ~~~
 [Unit]
@@ -18,6 +20,10 @@ WantedBy=multi-user.target
 
 /root/frp/frp_0.51.3_linux_386
 
+sudo systemctl daemon-reload
+sudo systemctl enable frps
+sudo systemctl start frps
+sudo systemctl status frps
 
 
 
