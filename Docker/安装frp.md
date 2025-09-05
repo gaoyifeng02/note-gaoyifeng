@@ -2,12 +2,7 @@
 https://blog.csdn.net/y_wu794/article/details/150637146
 
 ~~~
-docker run -d \
-  --name frps \
-  --restart=unless-stopped \
-  -p 7000:7000 \
-  -v /opt/frp/frps.toml:/etc/frp/frps.toml \
-  snowdreamtech/frps:0.51.3
+docker run -d --name frps --restart=unless-stopped -p 7000:7000 -v /opt/frp/frps.toml:/root/frp/frp_0.51.3_linux_386/frps.toml snowdreamtech/frps:0.51.3
 ~~~
 
 
