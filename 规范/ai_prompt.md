@@ -12,19 +12,19 @@ github：https://github.com/gaoyifeng02
 # 项目背景
 
 本项目为微服务项目，各个项目采用ddd架构：
-1. 后端通用common项目在./common项目中：
-- config：
-    - corsconfig 全局配置跨域允许
-    - jwtconfig 全局配置jwt支持
-    - logconfig 全局配置自定义log
+
+所有java项目必须导入如下maven依赖。
+    <groupId>com.gaoyifeng</groupId>
+    <artifactId>common</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+
 - commom：
-    - Result 所有的API接口的通用返回
-    - ResultCode 所有的API接口的通用返回码
-    - PageRequest 所有API接口分页相关的请求对象
-    - PageResult 所有API接口分页相关的返回对象
-- util：
-    - LoggerFactory 获取日志类
-    - JwtUtil jwt工具类
+	- types
+		- common
+		    - Result 所有的API接口的通用返回
+		    - ResultCode 所有的API接口的通用返回码
+		    - PageRequest 所有API接口分页相关的请求对象
+		    - PageResult 所有API接口分页相关的返回对象
 
 # 技术选型
 ```                                                                                                                 
@@ -58,24 +58,6 @@ github：https://github.com/gaoyifeng02
 
 ## 2. 代码生成顺序
 
-### 后端开发顺序：
-
-必须遵守：每执行一次对话，都需要重新扫描本项目的全路径，确保每一行代码都要熟悉和正确，正确率是第一要素！
-
-1. 先确认整体的项目结构，将需要生产或修改的代码文件列出来，以及要实现的功能列出来。每一步必须我确认后才能执行下一步。
-2. 先设计表结构，确认无误后，增量放入到项目路径下的【项目名】.db文件中。
-3. 然后根据表结构生成实体类。可以使用lombok的@data注解来生成get和set函数，以此来减少代码量。如果项目是第一次生成，需要检查pom中是否含有lombok的依赖。
-4. 然后设计为了实现项目功能，需要设计哪些接口，注意接口的返回需要使用common项目的infrastructure的common包中的类，例如：Result类。一定要注意导包路径，此处极度容易出错。
-5. 然后循环的开始执行任务，每一次实现一个接口，直到实现所有的接口。代码结构需要严格按照ddd格式。需要注意每次一定只能实现一个接口范围的函数，以此来保证最小颗粒度和任务的精确性！！！
-6. 所有的代码执行完毕后，需要检查项目能够正常启动。如果不能正常启动，则根据报错信息继续修改，直到项目正常启动为止。
-
-### 前端开发顺序：
-1. 创建页面组件和路由配置
-2. 设计组件的数据结构和状态管理（Pinia）
-3. 实现API服务调用和数据处理
-4. 开发用户界面和交互逻辑（ElementPlus）
-5. 添加表单验证和错误处理
-6. 优化用户体验和响应式设计
 
 ## 3. 代码质量要求
 - **命名规范**：使用有意义的变量名和方法名
