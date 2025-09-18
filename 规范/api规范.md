@@ -1,7 +1,7 @@
 GET - 获取资源（幂等）
   • 用于查询和检索数据
 
-  • 示例：GET /class/students?name="Jake"
+  • 示例：GET /class/st udents?name="Jake"
 
   POST - 创建资源（非幂等）
   • 创建新资源，不指定ID
