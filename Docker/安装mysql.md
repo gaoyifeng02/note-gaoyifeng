@@ -11,11 +11,15 @@ docker pull mysql:8.4.3
 
 ~~~
 docker run --name mysql8-alone \
-  -v /docker/mysql8:/var/lib/mysql \
   -p 3306:3306 \
   -e MYSQL_ROOT_PASSWORD=gaoyifeng \
   -d mysql:8.4.3
 ~~~
+
+~~~
+docker run --name mysql8-alone -p 3306:3306 -e MYSQL_ROOT_PASSWORD=gaoyifeng -d mysql:8.4.3
+~~~
+
 
 ~~~
 docker pull mysql:5.7
