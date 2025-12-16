@@ -11,8 +11,13 @@ docker pull redis:7.2.6
 alone
 
 ~~~
+docker run -p 6379:6379 --name redis-alone -d redis:7.2.6 redis-server
+~~~
+
+~~~
 docker run -p 6380:6379 --name redis-alone -v /docker/redis/redis.conf:/usr/local/etc/redis/redis.conf -v /docker/redis/data:/data -d redis:7.2.6 redis-server /usr/local/etc/redis/redis.conf 
 ~~~
+
 
 master
 
