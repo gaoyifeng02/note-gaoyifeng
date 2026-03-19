@@ -12,12 +12,12 @@ docker pull mysql:8.4.3
 ~~~
 docker run --name mysql8-alone \
   -p 3306:3306 \
-  -e MYSQL_ROOT_PASSWORD=gaoyifeng \
-  -d mysql:8.4.3
+  -e MYSQL_ROOT_PASSWORD=123456 \
+  -d mysql:8.4.8
 ~~~
 
 ~~~
-docker run --name mysql8-alone -p 3306:3306 -e MYSQL_ROOT_PASSWORD=gaoyifeng -d mysql:8.4.3
+docker run --name mysql8-alone -p 3306:3306 -e MYSQL_ROOT_PASSWORD=gaoyifeng -d mysql:8.4.8
 ~~~
 
 
