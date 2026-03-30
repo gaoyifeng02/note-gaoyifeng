@@ -1,0 +1,205 @@
+{
+  "main": {
+    "id": "ebb5c1ad399d479e",
+    "type": "split",
+    "children": [
+      {
+        "id": "e0a13e8a6d874da0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "68f719f1e2e430f0",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "021cc07fcf344f7f",
+    "type": "split",
+    "children": [
+      {
+        "id": "3852a62fda51140d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bcf393d744c6afb1",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "4949a523f79e6546",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "89bae334c254c623",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 239.5
+  },
+  "right": {
+    "id": "ae7d9e6f780d967b",
+    "type": "split",
+    "children": [
+      {
+        "id": "40780328ec5df7c8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2a80595861834ff5",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "ab92ee27f7448b30",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "git/1-git初级.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "1-git初级 的大纲"
+            }
+          },
+          {
+            "id": "2c35f08c8914987d",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 402.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:新建数据库": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "command-palette:打开命令面板": false,
+      "markdown-importer:打开 Markdown 格式转换器": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "4949a523f79e6546",
+  "lastOpenFiles": [
+    "mcp/未命名.md",
+    "工作/策略管理归档.md",
+    "mcp/未命名",
+    "mcp",
+    "日记/2026-03-30.md",
+    "框架/spring/2.事务.md",
+    "框架/spring/3.生命周期.md",
+    "框架/spring/1.bean.md",
+    "框架/spring",
+    "框架",
+    "未命名 2.md",
+    "未命名 1.md",
+    "日记/2026-03-03.md",
+    "数据库/redis/1.总结.md",
+    "数据库/redis",
+    "日记/2026-03-04.md",
+    "日记/2026-03-08.md",
+    "未命名.md",
+    "日记/2026-02-26.md",
+    "规划/1.md",
+    "规划",
+    "数据库/PG/2.数据库隔离级别.md",
+    "数据库/PG/3.MVCC.md",
+    "数据库/PG/1.Explain的使用.md",
+    "数据库/PG",
+    "数据库",
+    "工作/SQL优化.md",
+    "工作",
+    "MCP网关/1..md",
+    "MCP网关",
+    "日记/2026-02-25.md",
+    "k8s/第1阶段-架构与组件实战.md",
+    "日记/2026-01-20.md",
+    "日记/2026-01-12.md",
+    "日记/2026-01-07.md",
+    "简历/十年大佬简历.png",
+    "存档2.md",
+    "4-项目/SSO/流程图/SSO流程图.jpg",
+    "1-重要留档文件/毕业证.jpg",
+    "1-重要留档文件/微信图片_20250625011851.jpg",
+    "0-临时文件置顶/Pasted image 20250313153012.png",
+    "0-临时文件置顶/Pasted image 20250314152852.png",
+    "0-临时文件置顶/Pasted image 20250313160928.png",
+    "0-临时文件置顶/Pasted image 20250313160343.png",
+    "0-临时文件置顶/Pasted image 20250313155141.png",
+    "0-临时文件置顶/Pasted image 20250313154350.png",
+    "规划/未命名.canvas"
+  ]
+}
