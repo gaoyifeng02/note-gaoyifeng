@@ -5,7 +5,10 @@
 - BDD（Behavior Driven Development）
 	- 先提供行为约束，把需求写成可执行的行为断言，从头到尾发挥约束力，再实现
 	- 受DDD影响，以行为代替测试
-
-
-
-
+	- 解决上下文问题，每一个 Given-When-Then 场景都是边界清晰的小任务
+	- 只需要有feature->code一个变化方向
+	- 工作流：
+		- feature确定
+		- 技术设计
+		- ai生成
+		- BDD验证
