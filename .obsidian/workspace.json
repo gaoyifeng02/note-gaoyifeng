@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "日记/2026-03-31.md",
+                "file": "日记/2026-04-01.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-03-31"
+              "title": "2026-04-01"
             }
           }
         ]
@@ -158,12 +158,13 @@
   },
   "active": "5e411a726acd4952",
   "lastOpenFiles": [
+    "日记/2026-03-31.md",
+    "日记/2026-04-01.md",
     "知识库/ai-native/AI开发技巧.md",
     "知识库/ai-native/SDD-TDD-BDD.md",
     "工作/策略管理归档.md",
     "知识库/ai-native",
     "规划/未命名.md",
-    "日记/2026-03-31.md",
     "日记/模板/日记模板.md",
     "隐私/记录/1.2026.3.24.md",
     "知识库",
@@ -193,7 +194,6 @@
     "知识库/数据库/PG/2.数据库隔离级别.md",
     "知识库/数据库/PG/3.MVCC.md",
     "知识库/数据库/PG/1.Explain的使用.md",
-    "工作/SQL优化.md",
     "隐私/简历/十年大佬简历.png",
     "4-项目/SSO/流程图/SSO流程图.jpg",
     "1-重要留档文件/毕业证.jpg",
