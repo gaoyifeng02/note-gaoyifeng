@@ -5,7 +5,7 @@
   "promptDelete": false,
   "newFileLocation": "root",
   "newFileFolderPath": "新建",
-  "attachmentFolderPath": "./",
+  "attachmentFolderPath": "./附件",
   "pdfExportSettings": {
     "includeName": true,
     "pageSize": "Letter",
