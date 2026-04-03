@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "知识库/mcp/总结项/流程闭环.md",
+                "file": "规划/技术规划.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "流程闭环"
+              "title": "技术规划"
             }
           }
         ]
@@ -79,7 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 239.5
+    "width": 200
   },
   "right": {
     "id": "ae7d9e6f780d967b",
@@ -158,8 +158,10 @@
   },
   "active": "5e411a726acd4952",
   "lastOpenFiles": [
-    "知识库/mcp/未命名.md",
+    "规划/理财规划.md",
+    "规划/技术规划.md",
     "知识库/mcp/总结项/流程闭环.md",
+    "知识库/mcp/未命名.md",
     "知识库/mcp/总结项",
     "知识库/mcp/设计/0.项目背景.md",
     "日记/2026-04-03.md",
@@ -179,7 +181,6 @@
     "知识库/mcp/附件",
     "知识库/mcp/Pasted image 20260401124415.png",
     "未命名.md",
-    "规划/理财规划.md",
     "隐私/记录/1.2026.3.24.md",
     "隐私/简历/2.md",
     "日记/2026-03-31.md",
@@ -193,7 +194,6 @@
     "项目",
     "日记/2026-03-30.md",
     "规划/1.md",
-    "项目/MCP网关/1..md",
     "mcp/未命名",
     "知识库/mcp",
     "隐私/简历/十年大佬简历.png",
