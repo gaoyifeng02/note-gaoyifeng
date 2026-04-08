@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "规划/理财规划.md",
+                "file": "规划/未命名.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "理财规划"
+              "title": "未命名"
             }
           }
         ]
@@ -158,6 +158,8 @@
   },
   "active": "874d999a654ba3d8",
   "lastOpenFiles": [
+    "规划/理财规划.md",
+    "规划/未命名.md",
     "未命名.md",
     "日记/2026-04-08.md",
     "日记/2026-04-03.md",
@@ -167,7 +169,6 @@
     "知识库/mcp/总结项/流程闭环.md",
     "知识库/mcp/未命名.md",
     "规划/技术规划.md",
-    "规划/理财规划.md",
     "知识库/mcp/总结项",
     "知识库/mcp/设计/0.项目背景.md",
     "知识库/mcp/设计",
@@ -189,7 +190,6 @@
     "隐私/简历/2.md",
     "日记/2026-03-31.md",
     "知识库/ai-native/AI开发技巧.md",
-    "知识库/ai-native/SDD-TDD-BDD.md",
     "知识库/ai-native",
     "知识库",
     "隐私",
