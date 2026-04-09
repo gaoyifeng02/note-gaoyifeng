@@ -145,8 +145,6 @@ public record User(String name, int age) {
 
 ## 4. 实现接口
 
-### 4.1 普通接口
-
 ```java
 public record Point(double x, double y) implements Comparable<Point> {
     @Override
@@ -157,16 +155,93 @@ public record Point(double x, double y) implements Comparable<Point> {
 }
 ```
 
-### 4.2 Sealed Interface（密封接口）
+---
 
-Record 与 `sealed interface` 配合是天作之合——Record 隐式为 `final`，天然满足 sealed 的约束。
+## 5. Sealed 密封类/接口（Java 17+）
+
+### 5.1 什么是 sealed
+
+`sealed` 是 Java 15 预览、**Java 17 正式发布**的特性，用于**限制哪些类/接口可以继承或实现**。
+
+传统 Java 的继承控制只有两个极端：
+
+| 修饰符 | 含义 |
+|--------|------|
+| 不加修饰 | 谁都能继承 |
+| `final` | 谁都不能继承 |
+
+`sealed` 提供了中间地带——**"只有我指定的类才能继承"**。
+
+```
+final        → 完全封闭，谁都不行
+sealed       → 受控开放，只有 permits 列表中的类可以
+不加修饰     → 完全开放，谁都行
+```
+
+### 5.2 基本语法
 
 ```java
-// 定义密封接口，只允许三个 record 实现
+// 父类/接口用 sealed 声明，permits 列出允许的子类
 public sealed interface Shape permits Circle, Rectangle, Triangle {
     double area();
 }
 
+// 子类必须是 final、sealed 或 non-sealed 三者之一
+public final record Circle(double radius) implements Shape {
+    @Override
+    public double area() { return Math.PI * radius * radius; }
+}
+
+public final record Rectangle(double width, double height) implements Shape {
+    @Override
+    public double area() { return width * height; }
+}
+
+public non-sealed class Triangle implements Shape {  // non-sealed = 打开继承限制
+    @Override
+    public double area() { return 0; }
+}
+```
+
+### 5.3 三个子类修饰符
+
+| 修饰符 | 含义 | 场景 |
+|--------|------|------|
+| `final` | 到此为止，不能再被继承 | 子类不需要再扩展（Record 隐式 final，天然适用） |
+| `sealed` | 继续密封，需要再指定 `permits` | 需要进一步控制下一层继承 |
+| `non-sealed` | 打开限制，谁都能继承这个子类 | 某一分支允许开放扩展 |
+
+示例：多层 sealed 继承链
+
+```java
+public sealed interface Vehicle permits Car, Truck, Motorcycle {}
+
+public final record Car(String brand) implements Vehicle {}
+
+public sealed abstract class Truck implements Vehicle permits Pickup, SemiTruck {}
+public final record Pickup(double payload) extends Truck {}
+public final record SemiTruck(double payload) extends Truck {}
+
+public non-sealed class Motorcycle implements Vehicle {} // 开放，任何人可以继承 Motorcycle
+```
+
+### 5.4 sealed 的规则
+
+- `permits` 中的子类**必须与父类在同一个模块中**（同一包也可以），或者就在同一个编译单元中（如本项目的嵌套 record 写法）
+- 子类**必须**显式声明为 `final`、`sealed` 或 `non-sealed`
+- `sealed` 修饰符可用于 `class` 和 `interface`
+- `permits` 列表可以省略——如果所有子类都在同一个源文件中
+
+### 5.5 Record 与 sealed 是天作之合
+
+Record 隐式 `final`，天然满足 sealed 子类必须声明 `final/sealed/non-sealed` 的要求：
+
+```java
+public sealed interface Shape permits Circle, Rectangle {
+    double area();
+}
+
+// Record 隐式 final，无需额外声明
 public record Circle(double radius) implements Shape {
     @Override
     public double area() { return Math.PI * radius * radius; }
@@ -176,28 +251,61 @@ public record Rectangle(double width, double height) implements Shape {
     @Override
     public double area() { return width * height; }
 }
-
-public record Triangle(double base, double height) implements Shape {
-    @Override
-    public double area() { return 0.5 * base * height; }
-}
 ```
 
-配合 `switch` 模式匹配（Java 21）：
+如果用普通 class 实现 sealed 接口，必须手动加 `final`：
 
 ```java
-String describe(Shape shape) {
+public final class Triangle implements Shape { ... }  // 必须写 final
+```
+
+### 5.6 最大价值：switch 穷举检查
+
+配合 Java 21 的模式匹配，编译器能检查**是否覆盖了所有子类型**，不需要 `default` 分支：
+
+```java
+public String describe(Shape shape) {
     return switch (shape) {
-        case Circle(var r)      -> "圆形，半径=" + r;
+        case Circle(var r)           -> "圆形，半径=" + r;
         case Rectangle(var w, var h) -> "矩形，宽=" + w + "，高=" + h;
-        case Triangle(var b, var h)  -> "三角形，底=" + b + "，高=" + h;
+        // 不需要 default！如果 permits 列表新增了类型但这里没处理，编译器会报错
     };
 }
 ```
 
+如果将来 `permits` 列表中新增了 `Triangle` 但 `switch` 没处理，**编译直接报错**，杜绝遗漏。
+
+这是普通 interface + `instanceof` 做不到的——普通接口任何人都能实现，编译器无法穷举所有可能性。
+
+### 5.7 同一文件中省略 permits
+
+当 sealed 接口和所有实现都在同一个文件中时，`permits` 可以省略：
+
+```java
+// McpSchemaVO.java 中的写法（同一个文件内）
+public sealed interface JSONRPCMessage
+        permits JSONRPCRequest, JSONRPCNotification, JSONRPCResponse {
+    String jsonrpc();
+}
+
+public record JSONRPCRequest(...) implements JSONRPCMessage {}
+public record JSONRPCNotification(...) implements JSONRPCMessage {}
+public record JSONRPCResponse(...) implements JSONRPCMessage {}
+```
+
+### 5.8 一句话总结
+
+`sealed` = **受控的多态**。既想要接口的灵活性（多个实现），又想要枚举的封闭性（有限个取值、编译器强制穷举）。
+
+```
+enum    → 固定几个值，但没有多态行为
+sealed  → 固定几个实现，每个实现可以有不同的行为
+interface → 任意多个实现，编译器无法穷举
+```
+
 ---
 
-## 5. 嵌套 Record
+## 6. 嵌套 Record
 
 Record 可以定义在其他类或 Record 内部，天然适合建模层级数据结构：
 
@@ -223,11 +331,11 @@ ServerCapabilities caps = new ServerCapabilities(
 
 ---
 
-## 6. Record + Jackson
+## 7. Record + Jackson
 
 Record 与 Jackson 配合良好（Jackson 2.12+ 完整支持），是 JSON 数据建模的理想选择。
 
-### 6.1 基本序列化/反序列化
+### 7.1 基本序列化/反序列化
 
 ```java
 public record User(String name, int age) {}
@@ -242,7 +350,7 @@ String json = mapper.writeValueAsString(new User("Tom", 20));
 User user = mapper.readValue(json, User.class);
 ```
 
-### 6.2 字段名映射
+### 7.2 字段名映射
 
 Record 访问器不带 `get` 前缀，Jackson 默认按字段名序列化。如果 JSON 中的 key 与 Java 字段名不同，使用 `@JsonProperty`：
 
@@ -255,7 +363,7 @@ public record User(
 // JSON: {"user_name":"Tom","user_age":20}
 ```
 
-### 6.3 忽略未知字段 + 省略空值
+### 7.3 忽略未知字段 + 省略空值
 
 这是 Record + Jackson 最常见的组合注解：
 
@@ -276,7 +384,7 @@ public record InitializeRequest(
 
 ---
 
-## 7. Record + Builder 模式
+## 8. Record + Builder 模式
 
 Record 本身不支持 setter（不可变），当构造参数较多时，可以搭配 Builder：
 
@@ -339,7 +447,7 @@ ServerCapabilities caps = ServerCapabilities.builder()
 
 ---
 
-## 8. Record 的自定义方法
+## 9. Record 的自定义方法
 
 Record 可以声明实例方法（但只能读取字段，不能修改）和静态方法：
 
@@ -368,7 +476,7 @@ new Tool("search", "搜索", "{ ... }");        // 自定义构造器（传入 J
 
 ---
 
-## 9. Record vs Lombok @Value / Class
+## 10. Record vs Lombok @Value / Class
 
 | 特性 | `record` | Lombok `@Value` | Lombok `@Data` |
 |------|----------|-----------------|----------------|
@@ -388,11 +496,11 @@ new Tool("search", "搜索", "{ ... }");        // 自定义构造器（传入 J
 
 ---
 
-## 10. 项目中的实际应用
+## 11. 项目中的实际应用
 
 本项目在 `McpSchemaVO.java` 中大量使用 Record + Sealed Interface 建模 MCP 协议（JSON-RPC 2.0），是 Record 用法的完整范例。
 
-### 10.1 Sealed Interface 限定消息类型
+### 11.1 Sealed Interface 限定消息类型
 
 ```java
 // 只允许三种消息类型，编译器强制检查 switch 完备性
@@ -402,7 +510,7 @@ public sealed interface JSONRPCMessage
 }
 ```
 
-### 10.2 Record 建模各消息类型
+### 11.2 Record 建模各消息类型
 
 ```java
 // 请求 —— 有 method + id
@@ -429,7 +537,7 @@ public record JSONRPCResponse(
 ) implements JSONRPCMessage {}
 ```
 
-### 10.3 嵌套 Record 建模复合结构
+### 11.3 嵌套 Record 建模复合结构
 
 ```java
 public record ClientCapabilities(
@@ -447,7 +555,7 @@ public record ClientCapabilities(
 }
 ```
 
-### 10.4 自定义构造器提供便捷创建
+### 11.4 自定义构造器提供便捷创建
 
 ```java
 public record Tool(String name, String description, JsonSchema inputSchema) {
@@ -469,7 +577,7 @@ public record CallToolRequest(String name, Map<String, Object> arguments) implem
 
 ---
 
-## 11. 常见问题速查
+## 12. 常见问题速查
 
 | 问题 | 解决方案 |
 |------|---------|
