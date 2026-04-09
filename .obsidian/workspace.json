@@ -11,10 +11,14 @@
             "id": "fc331b23177be86d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "知识库/库技巧/record使用.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "record使用"
             }
           }
         ]
@@ -152,10 +156,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4949a523f79e6546",
+  "active": "fc331b23177be86d",
   "lastOpenFiles": [
-    "知识库/库技巧/HTTP客户端使用.md",
+    "知识库/库技巧/record使用.md",
     "知识库/库技巧/jackson使用.md",
+    "知识库/库技巧/HTTP客户端使用.md",
     "日记/2026-04-09.md",
     "日记/2026-04-08.md",
     "日记/2026-04-05.md",
@@ -185,7 +190,6 @@
     "知识库/mcp/附件",
     "知识库/mcp/Pasted image 20260401124415.png",
     "隐私/记录/1.2026.3.24.md",
-    "隐私/简历/2.md",
     "知识库/ai-native",
     "知识库",
     "隐私",
