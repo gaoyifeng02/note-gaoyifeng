@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "日记/2026-04-13.md",
+                "file": "知识库/ai-native/synch配置技巧.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-04-13"
+              "title": "synch配置技巧"
             }
           }
         ]
@@ -158,8 +158,9 @@
   },
   "active": "fc331b23177be86d",
   "lastOpenFiles": [
-    "日记/2026-04-11.md",
+    "知识库/ai-native/SDD-TDD-BDD.md",
     "日记/2026-04-13.md",
+    "日记/2026-04-11.md",
     "日记/2026-04-09.md",
     "工作/策略管理归档.md",
     "知识库/库技巧/record使用.md",
@@ -186,7 +187,6 @@
     "知识库/破解/navicat.md",
     "知识库/破解/jetbrains.md",
     "日记/2026-04-01.md",
-    "知识库/mcp/设计/2.建模设计.md",
     "知识库/mcp/附件/Pasted image 20260401124519.png",
     "知识库/mcp/附件",
     "知识库/mcp/Pasted image 20260401124415.png",
