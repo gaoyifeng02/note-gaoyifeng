@@ -35,8 +35,7 @@
               "title": "2026-04-14"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -171,8 +170,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "fe6020d19e5c026c",
+  "active": "b1795cd3433cc2f9",
   "lastOpenFiles": [
+    "日记/2026-04-14.md",
     "隐私/记录/2.2026.4.14.md",
     "知识库/ai-native/prompt/1.kafka切pulsar.md",
     "知识库/ai-native/prompt/2.写ck切pulsar.md",
@@ -180,7 +180,6 @@
     "日记/2026-04-02.md",
     "日记/2026-04-01.md",
     "日记/2026-03-31.md",
-    "日记/2026-04-14.md",
     "未命名.md",
     "知识库/工作/策略管理归档.md",
     "日记/2026-04-13.md",
