@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "日记/2026-04-14.md",
+                "file": "知识库/ai-native/prompt/1.kafka切pulsar.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-04-14"
+              "title": "1.kafka切pulsar"
             }
           }
         ]
@@ -156,11 +156,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4949a523f79e6546",
+  "active": "f33f0ea5f9e0d621",
   "lastOpenFiles": [
+    "日记/2026-04-14.md",
+    "知识库/ai-native/prompt/1.kafka切pulsar.md",
+    "知识库/ai-native/prompt",
     "知识库/ai-native/方法论",
     "未命名.md",
-    "日记/2026-04-14.md",
     "知识库/mcp/总结项/1.对接到claude code.md",
     "日记/2026-04-13.md",
     "知识库/ai-native/方法论/synch配置技巧.md",
@@ -194,8 +196,6 @@
     "知识库",
     "隐私",
     "项目",
-    "mcp/未命名",
-    "知识库/mcp",
     "隐私/简历/十年大佬简历.png",
     "4-项目/SSO/流程图/SSO流程图.jpg",
     "1-重要留档文件/毕业证.jpg",
