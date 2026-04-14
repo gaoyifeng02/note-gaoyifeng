@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "日记/2026-04-14.md",
+                "file": "日记/2026-04-03.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-04-14"
+              "title": "2026-04-03"
             }
           }
         ],
@@ -173,11 +173,14 @@
   },
   "active": "fe6020d19e5c026c",
   "lastOpenFiles": [
+    "日记/2026-04-02.md",
+    "日记/2026-04-01.md",
+    "日记/2026-03-31.md",
+    "日记/2026-04-14.md",
     "知识库/ai-native/prompt/1.kafka切pulsar.md",
     "知识库/ai-native/prompt/2.写ck切pulsar.md",
     "未命名.md",
     "知识库/工作/策略管理归档.md",
-    "日记/2026-04-14.md",
     "日记/2026-04-13.md",
     "知识库/mcp/未命名.md",
     "知识库/工作/SQL优化备档.md",
@@ -198,9 +201,6 @@
     "知识库/库技巧/record使用.md",
     "知识库/库技巧/jackson使用.md",
     "知识库/库技巧/HTTP客户端使用.md",
-    "日记/2026-04-08.md",
-    "日记/2026-04-05.md",
-    "规划/未命名.md",
     "知识库/mcp/总结项",
     "知识库/mcp/设计",
     "知识库/库技巧",
