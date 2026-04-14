@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "f26b69e36c91cdf1",
+        "id": "62deea1c11ca3cf4",
         "type": "tabs",
         "children": [
           {
-            "id": "b3aae6e393fadc6e",
+            "id": "a5f0ac4b9ce97583",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "知识库/设计模式/责任链模式.md",
-                "mode": "preview",
+                "file": "知识库/ai-native/prompt/2.写ck切pulsar.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "责任链模式"
+              "title": "2.写ck切pulsar"
             }
           }
         ]
@@ -156,13 +156,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4949a523f79e6546",
+  "active": "a5f0ac4b9ce97583",
   "lastOpenFiles": [
+    "知识库/ai-native/prompt/1.kafka切pulsar.md",
+    "知识库/ai-native/prompt/2.写ck切pulsar.md",
+    "知识库/设计模式/责任链模式.md",
     "知识库/设计模式/规则树模式.md",
     "项目/MCP网关/1..md",
     "项目/资产管理系统/表结构设计.md",
     "知识库/mcp/未命名.md",
-    "知识库/ai-native/prompt/1.kafka切pulsar.md",
     "日记/2026-04-14.md",
     "知识库/ai-native/prompt",
     "知识库/ai-native/方法论",
@@ -184,9 +186,7 @@
     "日记/2026-04-03.md",
     "日记/2026-04-04.md",
     "知识库/mcp/总结项/流程闭环.md",
-    "规划/技术规划.md",
     "知识库/mcp/总结项",
-    "知识库/mcp/设计/0.项目背景.md",
     "知识库/mcp/设计",
     "知识库/库技巧",
     "知识库/mcp/附件/Pasted image 20260401124519.png",
