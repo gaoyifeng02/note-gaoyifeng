@@ -11,10 +11,14 @@
             "id": "734f568a30cf3bc0",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "README"
             }
           }
         ]
@@ -154,9 +158,9 @@
   },
   "active": "734f568a30cf3bc0",
   "lastOpenFiles": [
+    "README.md",
     "日记/2026-04-15.md",
     "知识库/ai-native/BDD",
-    "未命名.md",
     "日记/2026-04-14.md",
     "知识库/ai-native/prompt/1.kafka切pulsar.md",
     "知识库/工作/策略管理归档.md",
