@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_项目文档/03_XDLP/SQL优化.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SQL优化"
+              "title": "README"
             }
           }
         ]
@@ -156,14 +156,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4949a523f79e6546",
+  "active": "d6f50c87eb9f598d",
   "lastOpenFiles": [
+    "98_知识库/07_开发环境/jetbrains.md",
+    "98_知识库/README.md",
+    "02_项目文档/03_XDLP/SQL优化.md",
     "98_知识库/06_云原生",
     "02_项目文档/03_XDLP",
     "98_知识库/工作/SQL优化备档.md",
-    "02_项目文档/03_XDLP/SQL优化.md",
     "99_个人隐私/01_日志/2026-04-15.md",
-    "98_知识库/README.md",
     "99_个人隐私/README.md",
     "01_开发规范/README.md",
     "02_项目文档/README.md",
@@ -181,7 +182,6 @@
     "99_个人隐私/02_挑战记录与复盘/1.2026.3.24.md",
     "99_个人隐私/03_优秀参考存档/2.md",
     "99_个人隐私/03_优秀参考存档",
-    "99_个人隐私/02_挑战记录与复盘",
     "99_个人隐私/01_日志/2026-04-14.md",
     "98_知识库/05_AI开发/prompt/1.kafka切pulsar.md",
     "02_项目文档/01_AIOServer/策略管理归档.md",
