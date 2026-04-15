@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "836d9d0c5b2efcca",
+        "id": "ecc75a4fd7ea771e",
         "type": "tabs",
         "children": [
           {
-            "id": "b1795cd3433cc2f9",
+            "id": "734f568a30cf3bc0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "日记/2026-04-15.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "2026-04-15"
+              "title": "新标签页"
             }
           }
         ]
@@ -156,11 +152,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4949a523f79e6546",
+  "active": "734f568a30cf3bc0",
   "lastOpenFiles": [
+    "日记/2026-04-15.md",
     "知识库/ai-native/BDD",
     "未命名.md",
-    "日记/2026-04-15.md",
     "日记/2026-04-14.md",
     "知识库/ai-native/prompt/1.kafka切pulsar.md",
     "知识库/工作/策略管理归档.md",
@@ -195,7 +191,6 @@
     "知识库/ai-native",
     "知识库",
     "隐私",
-    "项目",
     "隐私/简历/十年大佬简历.png",
     "4-项目/SSO/流程图/SSO流程图.jpg",
     "1-重要留档文件/毕业证.jpg",
