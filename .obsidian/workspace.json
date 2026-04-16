@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01_开发规范/README.md",
+                "file": "README.md",
                 "mode": "preview",
                 "source": false
               },
@@ -158,6 +158,7 @@
   },
   "active": "13c8fd2f980070cd",
   "lastOpenFiles": [
+    "01_开发规范/README.md",
     "01_开发规范/02_外部依赖/技术栈版本标准.md",
     "01_开发规范/01_DDD架构/DDD-Project-Structure-Standard.md",
     "README.md",
@@ -179,7 +180,6 @@
     "02_项目文档/03_XDLP",
     "98_知识库/工作/SQL优化备档.md",
     "99_个人隐私/README.md",
-    "01_开发规范/README.md",
     "02_项目文档/README.md",
     "03_踩坑指南/README.md",
     "98_知识库/05_AI开发",
