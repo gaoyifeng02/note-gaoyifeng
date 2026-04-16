@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "dfead409de26c9a7",
+        "id": "7c09b8923fa11565",
         "type": "tabs",
         "children": [
           {
-            "id": "13c8fd2f980070cd",
+            "id": "5713d7ed0192fc9b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01_开发规范/00_新建项目规范/新项目必做.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "新项目必做"
+              "title": "新标签页"
             }
           }
         ]
@@ -156,10 +152,21 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "13c8fd2f980070cd",
+  "active": "5713d7ed0192fc9b",
   "lastOpenFiles": [
-    "01_开发规范/01_DDD架构/DDD-Project-Structure-Standard.md",
+    "README.md",
+    "03_踩坑指南/01_Maven构建/多模块spring-boot-run找不到兄弟模块.md",
+    "03_踩坑指南/README.md",
+    "02_项目文档/README.md",
     "01_开发规范/00_新建项目规范/新项目必做.md",
+    "03_踩坑指南/04_配置相关/Redis密码未配置导致连接失败.md",
+    "03_踩坑指南/02_SpringBoot启动/端口占用导致启动失败.md",
+    "03_踩坑指南/02_SpringBoot启动/Mybatis配置文件缺失导致启动失败.md",
+    "03_踩坑指南/04_配置相关",
+    "03_踩坑指南/03_Docker环境",
+    "03_踩坑指南/02_SpringBoot启动",
+    "03_踩坑指南/01_Maven构建",
+    "01_开发规范/01_DDD架构/DDD-Project-Structure-Standard.md",
     "01_开发规范/README.md",
     "01_开发规范/00_新建项目规范",
     "02_项目文档/04_MAIL/05_核心文档/04_微信扫码登录实现.md",
@@ -170,9 +177,7 @@
     "02_项目文档/04_MAIL/03_接口与交互.md",
     "02_项目文档/04_MAIL/02_原理架构.md",
     "02_项目文档/04_MAIL/01_功能说明.md",
-    "README.md",
     "01_开发规范/02_外部依赖/技术栈版本标准.md",
-    "02_项目文档/README.md",
     "02_项目文档/04_MAIL/05_核心文档",
     "02_项目文档/04_MAIL",
     "99_个人隐私/01_日志/2026-04-16.md",
@@ -180,20 +185,11 @@
     "01_开发规范/02_外部依赖",
     "README.md~",
     "01_开发规范/README.md~",
-    "01_开发规范/01_DDD架构",
     "01_开发规范/DDD-Project-Structure-Standard.md",
     "98_知识库/05_AI开发/方法论/AI开发技巧.md",
     "98_知识库/08_计算机基础/README.md",
-    "98_知识库/03_中间件/01_数据库",
-    "98_知识库/08_计算机基础",
     "98_知识库/07_开发环境/jetbrains.md",
     "98_知识库/README.md",
-    "02_项目文档/03_XDLP/SQL优化.md",
-    "98_知识库/06_云原生",
-    "98_知识库/工作/SQL优化备档.md",
-    "99_个人隐私/README.md",
-    "03_踩坑指南/README.md",
-    "02_项目文档/02_McpGateway/未命名.md",
     "02_项目文档/02_McpGateway/附件/Pasted image 20260401124519.png",
     "知识库/mcp/Pasted image 20260401124415.png",
     "99_个人隐私/03_优秀参考存档/十年大佬简历.png",
