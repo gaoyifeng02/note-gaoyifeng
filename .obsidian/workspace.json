@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "4978871308622a47",
+        "id": "dfead409de26c9a7",
         "type": "tabs",
         "children": [
           {
-            "id": "4a2aacfa41e013ff",
+            "id": "13c8fd2f980070cd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01_开发规范/01_DDD架构/DDD-Project-Structure-Standard.md",
-                "mode": "source",
+                "file": "01_开发规范/README.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DDD-Project-Structure-Standard"
+              "title": "README"
             }
           }
         ]
@@ -156,14 +156,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4a2aacfa41e013ff",
+  "active": "13c8fd2f980070cd",
   "lastOpenFiles": [
-    "README.md",
     "01_开发规范/02_外部依赖/技术栈版本标准.md",
+    "01_开发规范/01_DDD架构/DDD-Project-Structure-Standard.md",
+    "README.md",
     "01_开发规范/02_外部依赖",
     "README.md~",
     "01_开发规范/README.md~",
-    "01_开发规范/01_DDD架构/DDD-Project-Structure-Standard.md",
     "01_开发规范/01_DDD架构",
     "01_开发规范/DDD-Project-Structure-Standard.md",
     "98_知识库/05_AI开发/方法论/AI开发技巧.md",
