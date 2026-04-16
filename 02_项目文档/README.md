@@ -25,4 +25,5 @@
 | 02_McpGateway | - | MCP 网关 |
 | 03_XDLP | - | XDLP |
 | 04_MAIL | Java | DDD 支付商城系统，集成支付宝沙箱支付与微信扫码登录 |
+| 05_java-base | Java | 基础模板项目，提供统一响应封装（Result）和设计模式（策略、责任链），所有新建 Java 项目必须基于此 |
 
