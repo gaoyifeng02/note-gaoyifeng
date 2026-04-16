@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
-                "mode": "preview",
+                "file": "02_项目文档/README.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
@@ -158,10 +158,10 @@
   },
   "active": "13c8fd2f980070cd",
   "lastOpenFiles": [
+    "README.md",
     "01_开发规范/README.md",
     "01_开发规范/02_外部依赖/技术栈版本标准.md",
     "01_开发规范/01_DDD架构/DDD-Project-Structure-Standard.md",
-    "README.md",
     "01_开发规范/02_外部依赖",
     "README.md~",
     "01_开发规范/README.md~",
