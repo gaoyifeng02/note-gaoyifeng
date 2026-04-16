@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01_开发规范/01_DDD架构/DDD-Project-Structure-Standard.md",
+                "file": "01_开发规范/00_新建项目规范/新项目必做.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DDD-Project-Structure-Standard"
+              "title": "新项目必做"
             }
           }
         ]
@@ -158,8 +158,8 @@
   },
   "active": "13c8fd2f980070cd",
   "lastOpenFiles": [
-    "01_开发规范/00_新建项目规范/新项目必做.md",
     "01_开发规范/01_DDD架构/DDD-Project-Structure-Standard.md",
+    "01_开发规范/00_新建项目规范/新项目必做.md",
     "01_开发规范/README.md",
     "01_开发规范/00_新建项目规范",
     "02_项目文档/04_MAIL/05_核心文档/04_微信扫码登录实现.md",
