@@ -35,7 +35,8 @@
               "title": "2026-04-17"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -170,10 +171,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5713d7ed0192fc9b",
+  "active": "5002b572d40a6177",
   "lastOpenFiles": [
-    "99_个人隐私/01_日志/2026-04-17.md",
     "98_知识库/05_AI开发/prompt/1.kafka切pulsar.md",
+    "99_个人隐私/01_日志/2026-04-17.md",
     "98_知识库/05_AI开发/prompt/2.写ck切pulsar.md",
     "99_个人隐私/01_日志/2026-04-16.md",
     "01_开发规范/00_新建项目规范/新项目必做.md",
